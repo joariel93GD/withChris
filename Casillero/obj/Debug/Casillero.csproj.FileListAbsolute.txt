@@ -1,0 +1,9 @@
+E:\Games projects\whitChris\withChris\Casillero\bin\Debug\Casillero.dll
+E:\Games projects\whitChris\withChris\Casillero\bin\Debug\Casillero.pdb
+E:\Games projects\whitChris\withChris\Casillero\bin\Debug\Entidades.dll
+E:\Games projects\whitChris\withChris\Casillero\bin\Debug\Entidades.pdb
+E:\Games projects\whitChris\withChris\Casillero\obj\Debug\Casillero.csprojAssemblyReference.cache
+E:\Games projects\whitChris\withChris\Casillero\obj\Debug\Casillero.csproj.CoreCompileInputs.cache
+E:\Games projects\whitChris\withChris\Casillero\obj\Debug\Casillero.csproj.CopyComplete
+E:\Games projects\whitChris\withChris\Casillero\obj\Debug\Casillero.dll
+E:\Games projects\whitChris\withChris\Casillero\obj\Debug\Casillero.pdb

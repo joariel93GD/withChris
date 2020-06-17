@@ -1,0 +1,11 @@
+E:\Games projects\whitChris\withChris\Magos\bin\Debug\Magos.dll
+E:\Games projects\whitChris\withChris\Magos\bin\Debug\Magos.pdb
+E:\Games projects\whitChris\withChris\Magos\bin\Debug\Casillero.dll
+E:\Games projects\whitChris\withChris\Magos\bin\Debug\Entidades.dll
+E:\Games projects\whitChris\withChris\Magos\bin\Debug\Casillero.pdb
+E:\Games projects\whitChris\withChris\Magos\bin\Debug\Entidades.pdb
+E:\Games projects\whitChris\withChris\Magos\obj\Debug\Magos.csprojAssemblyReference.cache
+E:\Games projects\whitChris\withChris\Magos\obj\Debug\Magos.csproj.CoreCompileInputs.cache
+E:\Games projects\whitChris\withChris\Magos\obj\Debug\Magos.csproj.CopyComplete
+E:\Games projects\whitChris\withChris\Magos\obj\Debug\Magos.dll
+E:\Games projects\whitChris\withChris\Magos\obj\Debug\Magos.pdb
