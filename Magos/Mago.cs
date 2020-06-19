@@ -44,19 +44,17 @@ namespace Magos
         public Casilla ElegirCasilla(Tablero tablero)
         {
             Random random = new Random();
-            int fila;
-            int columna;
+
             bool flag = default;
 
-            if(tablero.casillasOcupadas<=9)
-            { 
-            while (!flag)
+            if (tablero.casillasOcupadas <= 9)
             {
-                fila = random.Next(0,3);
-                columna = random.Next(0, 3);
-                if (!tablero.casillas[fila, columna].Ocupado)
-                    return tablero.casillas[fila, columna];
-            }
+                while (!flag)
+                {
+                    int index = random.Next(0, 9);
+                    if (!tablero.casillas[index].Ocupado)
+                        return tablero.casillas[index];
+                }
             }
             return null;
         }
@@ -65,9 +63,25 @@ namespace Magos
             
 
             if(i%2==0)
-            CrearMonstruo(ElegirCasilla(tablero), tablero.jugador.mazo.Dequeue());
+            {
+                CrearMonstruo(ElegirCasilla(tablero), tablero.jugador.mazo.Dequeue());
+                LanzarSpecialSkills(tablero);
+            }
             else
-            CrearMonstruo(ElegirCasilla(tablero), tablero.enemigo.mazo.Dequeue());
+            {
+                CrearMonstruo(ElegirCasilla(tablero), tablero.enemigo.mazo.Dequeue());
+                LanzarSpecialSkills(tablero);
+            }
+
+        }
+
+        public void LanzarSpecialSkills(Tablero tablero)
+        {
+            foreach(Casilla item in tablero.casillas)
+            {
+                if (item.Ocupado)
+                    item.Monstruo.SpecialSkill();
+            }
         }
 
         

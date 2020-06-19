@@ -16,7 +16,9 @@ namespace TestGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new PantallaPrincipal());
+            //Application.Run(new SeleccionDeMazo());
+            Application.Run(new GameForm(8,8,8,8));
         }
     }
 }

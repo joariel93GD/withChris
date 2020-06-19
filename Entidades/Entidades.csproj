@@ -44,7 +44,7 @@
     <Compile Include="Tank.cs" />
     <Compile Include="Assassin.cs" />
     <Compile Include="Warrior.cs" />
-    <Compile Include="Healer.cs" />
+    <Compile Include="Mago.cs" />
     <Compile Include="Monstruo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

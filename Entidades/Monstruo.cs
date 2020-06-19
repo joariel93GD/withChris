@@ -16,7 +16,7 @@ namespace Entidades
         
         public enum Clase
         {
-            Healer,
+            Mago,
             Warrior,
             Assassin,
             Tank
@@ -38,7 +38,7 @@ namespace Entidades
             this.Vida = vida;
             this.Fuerza = fuerza;
             this.tipo = tipo;
-            this.team = team;
+            this.Team = team;
 
         }
         public Monstruo (Monstruo monstruo)
@@ -46,7 +46,7 @@ namespace Entidades
             this.Vida = monstruo.Vida;
             this.Fuerza = monstruo.Fuerza;
             this.tipo = monstruo.Tipo;
-            this.team = monstruo.Team;
+            this.Team = monstruo.Team;
         }
         
         public int Vida
@@ -90,6 +90,8 @@ namespace Entidades
                 this.team = value;
             }
         }
+
+        public abstract void SpecialSkill();
 
 
     }

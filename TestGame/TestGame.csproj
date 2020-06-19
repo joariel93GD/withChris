@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="GameForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -58,13 +58,28 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaPrincipal.Designer.cs">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SeleccionDeMazo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionDeMazo.Designer.cs">
+      <DependentUpon>SeleccionDeMazo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaPrincipal.resx">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +91,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SeleccionDeMazo.resx">
+      <DependentUpon>SeleccionDeMazo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,10 +112,6 @@
       <Project>{1e1d6aec-8ee4-4732-8f6f-7f51b6ccb271}</Project>
       <Name>Casillero</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Consola\Consola.csproj">
-      <Project>{66645a07-1a10-4d7f-ac07-1f2d0ee4a163}</Project>
-      <Name>Consola</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{63c081e1-3461-42e6-bc14-4a960f11681e}</Project>
       <Name>Entidades</Name>
@@ -112,6 +126,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Assassin.png" />
+    <Content Include="Resources\AssassinByN.png" />
+    <Content Include="Resources\Healer.png" />
+    <Content Include="Resources\HealerByN.png" />
+    <Content Include="Resources\Tank.png" />
+    <Content Include="Resources\TankByN.png" />
+    <Content Include="Resources\Warrior.png" />
+    <Content Include="Resources\WarriorByN.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
