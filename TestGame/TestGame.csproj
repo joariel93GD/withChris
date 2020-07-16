@@ -132,6 +132,11 @@
     <Content Include="Resources\AssassinByN.png" />
     <Content Include="Resources\Healer.png" />
     <Content Include="Resources\HealerByN.png" />
+    <None Include="Resources\statsAssassin.png" />
+    <None Include="Resources\statsMago.png" />
+    <None Include="Resources\statsTank.png" />
+    <None Include="Resources\statsWarrior.png" />
+    <None Include="Resources\statsWarrior1.png" />
     <Content Include="Resources\Tank.png" />
     <Content Include="Resources\TankByN.png" />
     <Content Include="Resources\Warrior.png" />
