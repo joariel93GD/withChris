@@ -17,7 +17,7 @@ namespace TestGame
 
     public partial class GameForm : Form
     {
-
+       
        
         Tablero juego;
         int cantWarriors,cantAssassins,cantHealers,cantTanks;
@@ -98,8 +98,8 @@ namespace TestGame
             return juego;
         }
 
-        
 
+        
         public void RevisarCasillas (Tablero juego, object sender)
         {
             if(juego.casillas[0].Ocupado)
@@ -353,6 +353,7 @@ namespace TestGame
         private void Form1_Load(object sender, EventArgs e)
         {
             this.juego = ArrancarJuego(this.juego,this.cantWarriors,this.cantHealers,this.cantAssassins,this.cantTanks);
+           
             this.timer.Start();
         }
 
@@ -517,6 +518,11 @@ namespace TestGame
             }
         }
 
+        private void background_Click(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
 
         #region Casilla00
@@ -549,6 +555,7 @@ namespace TestGame
             {
                 Form2 fin = new Form2();
                 this.timer.Stop();
+                this.juego.enemyTurn.Abort();
                 fin.ShowDialog();
             }
             

@@ -179,6 +179,7 @@
             this.background.Size = new System.Drawing.Size(687, 560);
             this.background.TabIndex = 0;
             this.background.TabStop = false;
+            this.background.Click += new System.EventHandler(this.background_Click);
             // 
             // timer
             // 

@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using Magos;
 using Entidades;
 using Casillero;
+using System.Threading;
 using System.Xml.Schema;
 
 namespace Magos
 {
     public class Tablero
     {
+        public Thread enemyTurn;
         public Casilla[] casillas;
         public Mago jugador;
         public Mago enemigo;
@@ -34,6 +36,8 @@ namespace Magos
             this.casillas[6] = new Casilla();
             this.casillas[7] = new Casilla();
             this.casillas[8] = new Casilla();
+            this.enemyTurn = new Thread(TurnoEnemigo);
+            this.enemyTurn.Start();
         }
 
         public bool WaysToWin (Tablero tablero)
@@ -100,6 +104,30 @@ namespace Magos
             #endregion
             
             return false;
+        }
+
+        public void TurnoEnemigo()
+        {
+            Random eligeCasilla = new Random();
+            while (true)
+            {
+                int indice = eligeCasilla.Next(9);
+                if (this.casillasOcupadas > 0 && this.casillas[indice].Ocupado&&this.casillas[indice].Team == Equipo.Player)
+                {
+
+                    while (this.casillas[indice].Monstruo.Vida > 0)
+                    {
+                        Thread.Sleep(1050);
+                        if (this.casillas[indice].Monstruo.Vida > 0)
+                            this.casillas[indice].Monstruo.Vida -= this.damagePlayer;
+                        else
+                            this.casillas[indice].Ocupado = false;
+                    }
+
+                }
+
+            }
+
         }
         void Jugar()
         {
