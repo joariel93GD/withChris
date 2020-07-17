@@ -1,6 +1,4 @@
-E:\Games projects\whitChris\withChris\TestGame\bin\Debug\TestGame.exe.config
 E:\Games projects\whitChris\withChris\TestGame\bin\Debug\TestGame.exe
-E:\Games projects\whitChris\withChris\TestGame\bin\Debug\TestGame.pdb
 E:\Games projects\whitChris\withChris\TestGame\bin\Debug\Casillero.dll
 E:\Games projects\whitChris\withChris\TestGame\bin\Debug\Entidades.dll
 E:\Games projects\whitChris\withChris\TestGame\bin\Debug\Magos.dll
@@ -15,6 +13,5 @@ E:\Games projects\whitChris\withChris\TestGame\obj\Debug\TestGame.Properties.Res
 E:\Games projects\whitChris\withChris\TestGame\obj\Debug\TestGame.SeleccionDeMazo.resources
 E:\Games projects\whitChris\withChris\TestGame\obj\Debug\TestGame.csproj.GenerateResource.cache
 E:\Games projects\whitChris\withChris\TestGame\obj\Debug\TestGame.csproj.CoreCompileInputs.cache
-E:\Games projects\whitChris\withChris\TestGame\obj\Debug\TestGame.csproj.CopyComplete
 E:\Games projects\whitChris\withChris\TestGame\obj\Debug\TestGame.exe
 E:\Games projects\whitChris\withChris\TestGame\obj\Debug\TestGame.pdb

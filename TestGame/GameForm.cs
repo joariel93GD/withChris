@@ -546,6 +546,8 @@ namespace TestGame
 
         #endregion
 
+        
+
         private void timer_Tick(object sender, EventArgs e)
         {
             this.juego.jugador.JugarTurno(this.juego, this.i);

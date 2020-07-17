@@ -117,12 +117,12 @@ namespace Magos
 
                     while (this.casillas[indice].Monstruo.Vida > 0)
                     {
-                        Thread.Sleep(1050);
-                        if (this.casillas[indice].Monstruo.Vida > 0)
-                            this.casillas[indice].Monstruo.Vida -= this.damagePlayer;
-                        else
-                            this.casillas[indice].Ocupado = false;
+                        Thread.Sleep(1750);
+
+                        this.casillas[indice].Monstruo.Vida -= this.damagePlayer / 3;
+
                     }
+                    this.casillas[indice].Ocupado = false;
 
                 }
 
